@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    childprocess (3.0.0)
+    dotenv (2.7.6)
+    rubyzip (2.3.0)
+    securerandom (0.1.0)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  securerandom
+  selenium-webdriver
+
+BUNDLED WITH
+   2.1.4
