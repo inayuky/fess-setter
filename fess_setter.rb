@@ -7,7 +7,7 @@ include SeleniumDriver
 
 Dotenv.load File.dirname($0) + "/.env"
 MANUAL_URL = ENV["MANUAL_URL"]
-FESS_URL = ENV["FESS_URL"] || "http://localhost"
+FESS_URL = ENV["FESS_URL"] || "http://localhost:8080"
 FESS_USER = ENV["FESS_USER"] || "admin"
 FESS_PASS = ENV["FESS_PASS"] || "admin"
 
