@@ -132,7 +132,11 @@ def stop_crawler(driver)
   end
 end
 
-driver = create_driver
+# for selenium server
+driver = Selenium::WebDriver.for :remote, 
+  url: "http://localhost:4444/wd/hub",
+  desired_capabilities: :firefox
+
 manual_params = get_manual_data(driver)
 create_web_crawl_setting(driver, manual_params)
 create_labels(driver, manual_params)
