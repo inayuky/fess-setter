@@ -85,7 +85,7 @@ def create_web_crawl_setting(driver, manual_params)
   driver.find_element(:name, 'intervalTime').clear
   driver.find_element(:name, 'intervalTime').send_keys 1000
   driver.find_element(:name, 'create').click
-  driver.save_screenshot('fess-webconfig.png')
+  # driver.save_screenshot('fess-webconfig.png')
 end
 
 def create_labels(driver, manual_params)
